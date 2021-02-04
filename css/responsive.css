@@ -1,0 +1,187 @@
+
+/* Larger Tablets & Small Laptops */
+@media screen and (min-width: 600px) {
+    section .top h2 { font-size: 3em; }
+    section .top h3 { font-size: 2em; }
+    section .top h4 { font-size: 1.2em; }
+
+    .top-bar-toggle { display: none; }
+    .top-links {
+        --scale: 1;
+
+        display: flex;
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .top-links li:nth-child(2) { margin-right: 2em; }
+    .top-links li:first-child { flex-grow: 1; }
+
+    .top-links [data-child-expanded="true"] > .child-menu {
+        position: absolute;
+        right: 0;
+        display: block;
+        width: max-content;
+        margin-top: .5em;
+        padding: .5em;
+        background-color: #FFF;
+        box-shadow: 0 0 6px #CCC;
+    }
+
+    .top-links .child-menu li,
+    .top-links .child-menu a {
+        display: block;
+        width: 100%;
+        padding: .3em;
+    }
+
+    .top-links .child-menu a:hover {
+        background-color: #CCC;
+    }
+
+    .hero-section h1 { font-size: 3em; }
+    .hero-section h3 { font-size: 1.5em; margin-top: .5em; }
+
+    .pendant:nth-child(1) { top: 0; left: 1em }
+    .pendant:nth-child(2) { bottom: 4em; left: 1em; }
+    .pendant:nth-child(3) { top: 4em; left: 10em; }
+    .pendant:nth-child(4) { bottom: 5em; right: 7em; }
+    .pendant:nth-child(5) { top: 2em; right: 2em; }
+    .pendant:nth-child(6) { display: flex; bottom: 0; right: 0; }
+
+    .benefits-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .cta-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .cta-banner { width: 60%; margin-left: auto; }
+
+    .why-front-section .key-points {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: .5em;
+        width: 80%;
+        margin: 0 auto 2em;
+    }
+
+    .why-front-section .key-points li:nth-child(3) .bullet-point::after {
+        display: none;
+    }
+
+    .trusted-brands-section .brand-icon:nth-child(2) { display: block; }
+
+    .price-features-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .hire-us-section .hire-form .form-control {
+        display: flex;
+    }
+}
+
+/* Larger Laptops */
+@media screen and (min-width: 900px) {
+    .main-nav .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-nav.scrolled {
+        padding-top: 1em;
+    }
+
+    .mobile-menu-toggle { display: none; }
+
+    .main-nav .nav-links,
+    .main-nav.is-expanded .nav-links {
+        display: flex;
+        align-items: center;
+        width: initial;
+        height: 100%;
+        margin-top: 0;
+        padding: 0;
+        overflow: initial;
+    }
+
+    .nav-links li, .nav-links a { height: 100%; padding: 0; }
+    .main-nav .nav-links a.btn { display: initial; }
+
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2em 0;
+    }
+    .hero-section .hero-col:first-child { padding: 2em; }
+    .hero-section.container { max-width: 1250px; }
+    .hero-section h1 { font-size: 3.5em; }
+    .pendant-container { width: 700px; height: 40vh; }
+
+    .benefits-card-grid { grid-template-columns: repeat(4, 1fr); }
+
+    .cta-section .cta-text h2 { font-size: 2em; }
+
+    .why-front-section .key-points {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .5em;
+        margin: 0 auto 2em;
+    }
+
+    .why-front-section .key-points li .bullet-point { margin-bottom: .3em; }
+
+    .why-front-section .key-points li:nth-child(3) .bullet-point::after {
+        display: block;
+    }
+
+    .why-front-section .key-points li .bullet-point::after {
+        top: 50%;
+        left: 3.5em;
+        width: 10vw;
+        max-width: 8em;
+        height: 2px;
+    }
+
+    .why-front-section .key-points li { flex-direction: column; text-align: center; }
+
+    .testimony-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80%;
+    }
+
+    .testimony-section .customer-mugshot { padding: 0 0 2em 2.5em; background-size: 35%; }
+    .testimony-section .review { width: 80%; padding: 1em 0 0 4em; }
+
+    .trusted-brands-section .brand-icon:first-child { display: block; }
+
+    .pricing-section .pricing-row { 
+        display: flex;
+        gap: 1em;
+    }
+
+    .hire-us-section {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+        padding: 4em;
+    }
+
+    .hire-us-section .col,
+    .hire-us-section .hire-form {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .page-footer .footer-top-cols { grid-template-columns: 25% repeat(4, 1fr);}
+    .footer-col:first-child { grid-column: initial; }
+}
